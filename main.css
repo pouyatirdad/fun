@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header{
+    padding: 15px;
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+}
+a , .mobile{
+    color: white;
+    font-size: larger;
+    padding: 5px;
+}
+.body{
+    width: 100%;
+    margin: 0;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.side{
+    width: 20%;
+    height: auto;
+}
+.side1{
+    margin: 5% 0;
+    margin-right: 5%;
+    padding:6%;
+    font-size: larger;
+    text-align: center;
+    color: white;
+    background: -webkit-linear-gradient(top,green ,black );
+    box-shadow: green 10px 10px 10px;
+    border-radius: 10px;
+}
+.main{
+    margin: 1% 0;
+    margin-left: 5%;
+    height: auto;
+    padding:1%;
+    color: white;
+    background: -webkit-linear-gradient(top,blue ,red );
+    box-shadow: purple 10px 10px 10px;
+    border-radius: 10px;
+    width: 70%;
+}
+.h{
+    text-align: center;
+}
+.p{
+    text-align: left;
+}
+footer{
+    position: relative;
+    bottom: 100%;
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 4px;
+}
+.ip{
+    display: flex;
+    width: 100px;
+}
+.mobile{
+    display: none;
+}
+.mbh{
+    display: none;
+}
+@media screen and (max-width:500px){
+    .nav{
+        display: none;
+    }
+    .mobile{
+        display: flex;
+    }
+    a{
+        color: white;
+        font-size: larger;
+        text-decoration: none;
+        padding: 5px;
+    }
+    .body{
+        width: 100%;
+        margin: 0;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .side{
+        order: -1;
+        width: 98%;
+        height: auto;
+        margin: 1%;
+    }
+    .side1{
+        padding:6%;
+        font-size: larger;
+        text-align: center;
+        color: white;
+        background: -webkit-linear-gradient(top,green ,black );
+        box-shadow: green 10px 10px 10px;
+        border-radius: 10px;
+    }
+    .main{
+        margin: 2%;
+        height: auto;
+        padding:1%;
+        color: white;
+        background: -webkit-linear-gradient(top,blue ,red );
+        box-shadow: purple 10px 10px 10px;
+        border-radius: 10px;
+        width: 90%;
+    }
+    .h{
+        text-align: center;
+    }
+    .p{
+        text-align: left;
+    }
+    footer{
+        margin-top: 5%;
+        position: relative;
+        bottom: 100%;
+        text-align: center;
+        background: black;
+        color: white;
+        padding: 4px;
+    }
+    .ip{
+        display: flex;
+        width:87%;
+    }
+    .mbh{
+        display: flex;
+        float: right;
+        width: 80%;
+        background-color: black;
+        padding: 10px;
+    }
+}
